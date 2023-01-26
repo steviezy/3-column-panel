@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.card {
+    border-radius: 0px;
+    height: 500px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 12px;
+    letter-spacing: 1px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.card-text {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    mix-blend-mode: lighten;
+}
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        margin: 100px 0px 100px 0px;
+    }
+
+    .card:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card:nth-child(3) {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media (min-width: 600px) {
+    .card:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .card:nth-child(3) {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
